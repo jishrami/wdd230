@@ -1,9 +1,5 @@
-main h1 {
-    text-decoration: underline;
-    color: blue;
-}
-
-main h1:hover {
-    color: black;
-    cursor: pointer;
+header {
+    background-color: #008b8b;
+    color: azure;/* https://coolors.co/008b8b-cee0dc-afaab9-b48291 */
+    height: 100px;
 }
