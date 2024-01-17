@@ -96,6 +96,20 @@ footer {
     color: #f0ffff;
     text-align: center;
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     flex-direction: column;
+    text-shadow:
+        2px 2px 1px #000,
+        -2px 2px 1px #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 1rem;
 }

@@ -25,13 +25,4 @@
         grid-row: 2/3;
     }
     
-    footer {
-        flex-direction: unset;
-        justify-content: center;
-    }
-
-    footer p {
-        padding: 1rem;
-    }
-
 }
