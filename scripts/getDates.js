@@ -1,7 +1,13 @@
-const year = document.getElementById("year");
-const lastModified = document.getElementById("lastModified");
+function getCurrentYear() {
+    const year = document.getElementById("year");
+    let date = new Date();
+    year.innerHTML = date.getFullYear();
+};
 
-let date = new Date();
+function getLastModified() {
+    const lastModified = document.getElementById("lastModified");
+    lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
+};
 
-year.innerHTML = date.getFullYear();
-lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
+getCurrentYear()
+getLastModified()
