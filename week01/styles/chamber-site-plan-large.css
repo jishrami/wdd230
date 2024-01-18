@@ -1,0 +1,21 @@
+@media screen and (min-width:700px) {
+
+    #wireframe {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #wireframe h3 {
+        grid-row: 1/2;
+    }
+
+    #web-view {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    }
+
+    #mobile-view {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    }
+    
+}
