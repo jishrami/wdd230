@@ -2,8 +2,9 @@ const inputElement = document.querySelector("#favchap");
 const buttonElement = document.querySelector("button");
 const listElement = document.querySelector("#list");
 
-buttonElement.addEventListener('click', () => {
+buttonElement.addEventListener('click', (e) => {
     if (inputElement.value != '') {
+        e.preventDefault();
         const value = inputElement.value;
         if (value) {
             const deleteButton = document.createElement("button");
