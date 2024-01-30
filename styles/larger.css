@@ -4,6 +4,14 @@
         justify-content: center;
     }
 
+    #menu {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
     main {
         grid-template-columns: 2fr 1fr;
         width: 75%;

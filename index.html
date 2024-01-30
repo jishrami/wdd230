@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:title" content="Josh Ramirez - WDD 230">
-    <meta name="og:description" content="Web Frontend Development projects for Winter 2024 at BYU-Idaho.">
-    <meta name="description" content="Web Frontend Development projects for Winter 2024 at BYU-Idaho.">
-    <meta name="og:url" content="https://jishrami.github.io/wdd230">
-    <meta name="og:image" content="https://media.istockphoto.com/id/483656343/photo/tucson-arizona-skyline-cityscape-framed-by-saguaro-cactus-and-mountains.jpg?s=2048x2048&w=is&k=20&c=BEGI2hQUDXEAX5EiL6r9Yzkry20-dO2s2Nt_pABT7HU=">
-    <meta name="og:type" content="website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" content="Josh Ramirez - WDD 230" />
+    <meta
+      name="og:description"
+      content="Web Frontend Development projects for Winter 2024 at BYU-Idaho."
+    />
+    <meta
+      name="description"
+      content="Web Frontend Development projects for Winter 2024 at BYU-Idaho."
+    />
+    <meta name="og:url" content="https://jishrami.github.io/wdd230" />
+    <meta
+      name="og:image"
+      content="https://media.istockphoto.com/id/483656343/photo/tucson-arizona-skyline-cityscape-framed-by-saguaro-cactus-and-mountains.jpg?s=2048x2048&w=is&k=20&c=BEGI2hQUDXEAX5EiL6r9Yzkry20-dO2s2Nt_pABT7HU="
+    />
+    <meta name="og:type" content="website" />
     <title>Josh Ramirez - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Kanit">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kanit"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
     <header>
-        <img src="images/josh-profile.jpg" alt="Josh Ramirez profile picture">
-        <span>Josh Ramirez</span>
+      <img src="images/josh-profile.jpg" alt="Josh Ramirez profile picture" />
+      <span>Josh Ramirez</span>
     </header>
-    <nav>
-        <a href="index.html" id="home">Home</a>
-        <a href="">Chamber</a>
-        <a href="week01/chamber-site-plan.html">Site Plan</a>
-        <a href="">Form</a>
+    <button id="menu"></button>
+    <nav id="navigation">
+      <a href="index.html" id="home">Home</a>
+      <a href="">Chamber</a>
+      <a href="week01/chamber-site-plan.html">Site Plan</a>
+      <a href="">Form</a>
     </nav>
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card" id="activities">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/jishrami/pen/GReqXWg" target="_blank">JS Pen</a> </li>
-                <li>Week 02: <a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/jishrami/pen/zYbdjLO" target="_blank">Responsive Menu</a> | <a href="week02/bom.html">DOM Manipulation</a> </li>
-                <li>Week 03: </li>
-                <li>Week 04: </li>
-                <li>Week 05: </li>
-                <li>Week 06: </li>
-                
-            </ul>
-        </section>
-        <section class="card" id="information">
-            <h2>Information</h2>
-            <p id="placeholder"></p>
-        </section>
+      <h1>WDD 230: Web Frontend Development</h1>
+      <section class="card" id="activities">
+        <h2>Learning Activities</h2>
+        <ul>
+          <li>
+            Week 01: <a href="week01/holygrail.html">Layout</a> |
+            <a href="week01/media-query.html">Media Query</a> |
+            <a href="https://codepen.io/jishrami/pen/GReqXWg" target="_blank"
+              >JS Pen</a
+            >
+          </li>
+          <li>
+            Week 02: <a href="week02/design.html">Design Principles</a> |
+            <a href="https://codepen.io/jishrami/pen/zYbdjLO" target="_blank"
+              >Responsive Menu</a
+            >
+            | <a href="week02/bom.html">DOM Manipulation</a>
+          </li>
+          <li>Week 03:</li>
+          <li>Week 04:</li>
+          <li>Week 05:</li>
+          <li>Week 06:</li>
+        </ul>
+      </section>
+      <section class="card" id="information">
+        <h2>Information</h2>
+        <p id="placeholder"></p>
+      </section>
     </main>
     <footer>
-        <div>
-            <p>&copy; <span id="year"></span></p>
-            <p>Josh Ramirez</p>
-            <p>United States</p>
-        </div>
-        <p id="lastModified">Last Modification:</p>
+      <div>
+        <p>&copy; <span id="year"></span></p>
+        <p>Josh Ramirez</p>
+        <p>United States</p>
+      </div>
+      <p id="lastModified">Last Modification:</p>
     </footer>
     <script src="scripts/getDates.js"></script>
-</body>
+    <script src="scripts/hamburgerButton.js"></script>
+  </body>
 </html>

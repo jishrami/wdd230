@@ -20,12 +20,36 @@ header img {
     border-radius: 25%;
 }
 
+#menu {
+	font-size: 1.5rem;
+	border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    background-color: #f0ffff;
+	padding: 0.25rem 0.75rem;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
 nav {
     background-color: #AFAAB9;
     font-size: 2em;
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.open a {
+    display: block;
 }
 
 #home {
@@ -39,6 +63,7 @@ nav {
 }
 
 nav a {
+    display: none;
     color: #000000;
     text-decoration: none;
     padding: .5rem;
