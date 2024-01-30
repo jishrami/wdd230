@@ -20,16 +20,45 @@ header img {
     border-radius: 25%;
 }
 
-#menu {
-	font-size: 1.5rem;
+#dark-mode {
+    background-color: #000;
 	border: 5px solid rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
     background-color: #f0ffff;
 	padding: 0.25rem 0.75rem;
 	color: #000;
+    position: relative;
+    bottom: 2rem;
+    left: 5rem;
+    cursor: pointer;
+}
+
+#dark-mode::before {
+    content: "☀";
+}
+
+#dark-mode.dark::before {
+    content: "☾";
+}
+
+#dark-mode.dark {
+    background-color: #000;
+    color: #f0ffff;
+}
+
+.dark {
+    background-color: #000;
+    color: #f0ffff;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 5px solid #00000080;
+    border-radius: 0.5rem;
+	padding: 0.25rem 0.75rem;
 	position: absolute;
 	top: 5rem;
-	right: 2rem;
+	left: 2rem;
 }
 
 #menu::before {
@@ -73,6 +102,10 @@ nav a {
 
 nav a:hover {
     background-color: #f0ffff;
+}
+
+nav a.dark:hover {
+    color: #000;
 }
 
 main {
