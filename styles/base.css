@@ -28,8 +28,8 @@ header img {
 	padding: 0.25rem 0.75rem;
 	color: #000;
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: 5rem;
+	right: 2rem;
 }
 
 #menu::before {
