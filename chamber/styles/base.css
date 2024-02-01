@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: #0071B9 0 0 10px;
+    display: flex;
+    font-size: 2em;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 175px;
+    margin: 0 auto;
+}
+
+
+#join {
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    background-color: #0071B9;
+    color: #FC5130;
+    padding: 0.25rem 0.75rem;
+    margin-left: 1rem;
+    text-shadow: #96C0B7 0 0 10px;
+}
+
+#join:hover {
+    background-color: #96C0B7;
+    cursor: pointer;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    background-color: #FC5130;
+    color: #0071B9;
+    padding: 0.25rem 0.75rem;
+    margin-left: 1rem;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#navigation {
+    display: none;
+    position: absolute;
+    font-size: 1.5rem;
+    border: 5px solid #00000080;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    margin: 1rem;
+    top: 9rem;
+    right: 1rem;
+    background-color: #0071B9;
+}
+
+#navigation.open {
+    display: block;
+}
+
+#navigation a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: .5rem;
+    align-items: right;
+    justify-content: right;
+}
+
+#navigation a:hover {
+    background-color: #96C0B750;
+    color: #FC5130;
+}
+
+#weather {
+    background-color: #0071b975;
+    text-align: center;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+#events-banner {
+    background-color: #0071b975;
+    text-align: center;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+#past-events {
+    background-color: #0071b975;
+    text-align: center;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+#board {
+    background-color: #0071b975;
+    text-align: center;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+footer {
+    background-color: #0071B9;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    display: flexbox;
+}
+
+footer a {
+    color: #f0ffff;
+    text-decoration: none;
+    padding: 1rem;
+    align-items: left;
+    justify-content: left;
+}
