@@ -69,7 +69,7 @@ header {
 
 #navigation.open {
     display: block;
-    transform: translateX(0);
+    transform: translateX(-1rem);
     transition: transform 0.3s ease-in-out;
 }
 
