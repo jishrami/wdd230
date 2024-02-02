@@ -3,10 +3,34 @@
         display: none;
     }
 
+    #logo {
+        margin: 1rem auto 1rem 1rem;
+    }
+
     #navigation {
-        display: block;
+        display: flex;
         transform: none;
         transition: none;
+        right: 30%;
+        top: 3rem;
+        background-color: #00000020;
+        border: none;
+
+    }
+
+    #navigation a {
+        border: 1px solid #bbb;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+
+    #social-head {
+        display: block;
+    }
+
+    #join {
+        right: 8rem;
     }
 
     #weather {
@@ -24,5 +48,24 @@
     #ten-day {
         display: flex;
         justify-content: right;
+    }
+
+    #past-events {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 75%;
+    }
+
+    #board {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    #social-foot {
+        display: none;
     }
 }
