@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Josh Ramirez" />
+    <meta name="description" content="Lazy Load Practice" />
+    <title>Lazy Load Practice</title>
+    <link rel="stylesheet" href="styles/lazyload.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lazy Loading Demo</h1>
+    </header>
+    <main>
+      <img
+        loading="lazy"
+        src="//picsum.photos/400/600"
+        alt="placeholder image" width="400" height="600"
+      />
+      <img
+        loading="lazy"
+        src="//picsum.photos/400/630"
+        alt="placeholder image" width="400" height="630"
+      />
+      <img
+        loading="lazy"
+        src="//picsum.photos/400/640"
+        alt="placeholder image" width="400" height="640"
+      />
+      <img
+        loading="lazy"
+        src="//picsum.photos/400/650"
+        alt="placeholder image" width="400" height="650"
+      />
+      <img
+        loading="lazy"
+        src="//picsum.photos/400/700"
+        alt="placeholder image" width="400" height="700"
+      />
+      <img
+        loading="lazy"
+        src="//picsum.photos/400/800"
+        alt="placeholder image" width="400" height="800"
+      />
+    </main>
+    <footer>
+      <p>&copy;Josh Ramirez</p>
+      <p id="year"></p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+  </body>
+</html>
