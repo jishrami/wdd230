@@ -11,7 +11,7 @@ header {
     font-size: 2em;
     padding: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 header img {
@@ -27,9 +27,6 @@ header img {
     background-color: #f0ffff;
 	padding: 0.25rem 0.75rem;
 	color: #000;
-    position: relative;
-    bottom: 2rem;
-    left: 5rem;
     cursor: pointer;
 }
 
@@ -56,9 +53,6 @@ header img {
 	border: 5px solid #00000080;
     border-radius: 0.5rem;
 	padding: 0.25rem 0.75rem;
-	position: absolute;
-	top: 5rem;
-	left: 2rem;
 }
 
 #menu::before {
@@ -110,11 +104,11 @@ nav a.dark:hover {
 
 main {
     justify-items: center;
-    display: grid;
     justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    align-items: center;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 main h1 {
@@ -138,6 +132,7 @@ main li {
 .card {
     border: solid 1px #008b8b;
     width: 100%;
+    height: 100%;
 }
 
 #activities {
@@ -146,7 +141,21 @@ main li {
 }
 
 #information {
+    justify-items: center;
     grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+}
+
+#info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#map {
+    padding: 1rem;
 }
 
 footer {
