@@ -28,10 +28,13 @@ header img {
 	padding: 0.25rem 0.75rem;
 	color: #000;
     cursor: pointer;
+    width: 3.25rem;
+    align-items: center;
 }
 
 #dark-mode::before {
     content: "☀";
+
 }
 
 #dark-mode.dark::before {
