@@ -1,28 +1,41 @@
 @media screen and (min-width: 800px) {
+    header {
+        justify-content: flex-start;
+    }
+
     #menu {
         display: none;
     }
 
     #logo {
-        margin: 1rem auto 1rem 1rem;
+        margin: 0;
     }
 
     #navigation {
         display: flex;
         transform: none;
         transition: none;
-        right: 30%;
-        top: 3rem;
-        background-color: #00000020;
         border: none;
-
+        background-color: #fff;
+        position: relative;
+        margin: 0 0 0 auto;
+        top: 0;
+        padding: 0;
     }
 
     #navigation a {
-        border: 1px solid #bbb;
+        background-color: #fff;
+        padding: 0;
+    }
+
+    #navigation a:nth-child(2), #navigation a:nth-child(3) {
+        margin-left: 3rem;
+    }
+
+    #navigation a:hover {
         border-radius: 0.5rem;
-        padding: 0.5rem;
-        margin: 1rem;
+        text-decoration: underline #0071B9 3px;
+        text-underline-offset: 4px; 
     }
 
     #social-head {

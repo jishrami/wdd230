@@ -12,11 +12,12 @@ header {
     padding: 1rem;
     align-items: center;
     justify-content: center;
-}
+}   
 
 #logo {
     height: 175px;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 
@@ -43,7 +44,7 @@ header {
 
 #menu {
     font-size: 1.5rem;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid #00000080;
     border-radius: 0.5rem;
     background-color: #FC5130;
     color: #0071B9;
