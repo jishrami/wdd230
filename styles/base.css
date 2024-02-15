@@ -106,10 +106,10 @@ nav a.dark:hover {
 }
 
 main {
+    padding-top: 1rem;
     justify-items: center;
     justify-content: center;
     align-items: center;
-    margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
 }
