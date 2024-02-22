@@ -10,7 +10,10 @@
     --candy: #00800025;
 }
 
-table, tr, th, td {
+table,
+tr,
+th,
+td {
     border: var(--blackbord);
     border-collapse: collapse;
     padding: 1rem;
@@ -21,15 +24,15 @@ td {
     text-align: center;
 }
 
-thead tr:first-child{
+thead tr:first-child {
     background-color: var(--back);
 }
 
-thead td{
+thead td {
     background-color: var(--back2);
 }
 
-thead td:first-child{
+thead td:first-child {
     background-color: white;
 }
 
@@ -38,5 +41,5 @@ caption {
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--candy);
+    background-color: var(--candy);
 }
