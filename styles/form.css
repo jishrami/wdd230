@@ -1,6 +1,8 @@
 :root {
-  --border: solid 1px #008b8b;
-  
+  --border: solid 1px rgb(0, 139, 139);
+  --pink: 255, 105, 180;
+  --blue: 0, 139, 139;
+  --bcenter: 0 auto;
 }
 
 #form-main {
@@ -19,7 +21,7 @@
   max-width: 600px;
   margin:  10px auto;
   padding: 1rem;
-  background-image: linear-gradient(to bottom, #ff69b450 0%, #ff69b4 100%);
+  background-image: linear-gradient(to bottom, rgba(var(--pink), 0.314) 0%, rgba(var(--pink), 1) 100%);
 }
 
 .wf1 label {
@@ -35,7 +37,7 @@
 .wf1 input[type="email"],
 .wf1 input[type="submit"],
 .wf1 input[type="password"] {
-  background-color: #ff69b4;
+  background-color: rgba(var(--blue),.314);
   display: block;
   border: var(--border);
   border-radius: 6px;
@@ -44,9 +46,10 @@
 }
 
 .wf1 input[type="submit"]{
-    margin: 0 auto;
+    margin: var(--bcenter);
     width: 25%;
     min-width: 250px;
+    background-color: rgb(var(--blue));
 }
 
 /* use reverse flexbox to take advantage of flex-direction: reverse */
