@@ -134,7 +134,7 @@ main {
     font-size: 1.5rem;
 }
 
-main h1 {
+main #indexh1 {
     border-bottom: solid 1px #008b8b;
     margin-bottom: 1rem;
     width: 100%;

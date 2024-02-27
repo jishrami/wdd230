@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josh Ramirez">
+    <meta name="description" content="Form Team Activity">
+    <title>Form Team Activity</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <button id="menu" title="Menu"></button>
+        <img src="images/josh-profile.webp" alt="Josh Ramirez profile picture" />
+        <span>Josh Ramirez</span>
+        <button id="dark-mode" title="Toggle Dark Mode"></button>
+    </header>
+    <nav id="navigation">
+        <a href="index.html" id="home">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="">Form</a>
+    </nav>
+    <main id="form-main">
+        <h1 id="formh1">Form Activity</h1>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Create an Account</legend>
+                <label>Username: *
+                </label>
+                <input type="text" name="username" id="username" required>
+                <label>Password: *
+                </label>
+                <input type="password" name="password" id="password" required pattern="[A-Za-z0-9]{8,}"
+                    placeholder="8 characters, A-Z 0-9">
+                <label>Confirm Password: *
+                </label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required>
+                <label>Email: *
+                </label>
+                <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email.">
+            </fieldset>
+            <input type="submit" value="Create Account" id="createAccount">
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star-a" value="5" />
+                <label for="star-a"></label>
+
+                <input type="radio" name="stars" id="star-b" value="4" />
+                <label for="star-b"></label>
+
+                <input type="radio" name="stars" id="star-c" value="3" />
+                <label for="star-c"></label>
+
+                <input type="radio" name="stars" id="star-d" value="2" />
+                <label for="star-d"></label>
+
+                <input type="radio" name="stars" id="star-e" value="1" />
+                <label for="star-e"></label>
+            </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; <span id="year"></span></p>
+            <p>Josh Ramirez</p>
+            <p>United States</p>
+        </div>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerButton.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageCounter.js"></script>
+    <script src="scripts/createAccount.js"></script>
+</body>
+
+</html>
