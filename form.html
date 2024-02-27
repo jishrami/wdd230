@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" />
 </head>
 
 <body>
@@ -31,19 +33,19 @@
             <fieldset>
                 <legend>Create an Account</legend>
                 <label>Username: *
+                    <input type="text" name="username" id="username" required>
                 </label>
-                <input type="text" name="username" id="username" required>
                 <label>Password: *
+                    <input type="password" name="password" id="password" required pattern="[A-Za-z0-9]{8,}"
+                        placeholder="8 characters, A-Z 0-9">
                 </label>
-                <input type="password" name="password" id="password" required pattern="[A-Za-z0-9]{8,}"
-                    placeholder="8 characters, A-Z 0-9">
                 <label>Confirm Password: *
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
                 </label>
-                <input type="password" name="confirmPassword" id="confirmPassword" required>
                 <label>Email: *
+                    <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        title="Please enter a valid email.">
                 </label>
-                <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                    title="Please enter a valid email.">
             </fieldset>
             <input type="submit" value="Create Account" id="createAccount">
             <div class="star-rating">
