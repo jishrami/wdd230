@@ -1,127 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Josh Ramirez" />
-    <meta
-      name="description"
-      content="Fort Lauderdale Chamber of Commerce website practice"
-    />
+    <meta name="description" content="Fort Lauderdale Chamber of Commerce website practice" />
     <meta name="og:title" content="Fort Lauderdale Chamber of Commerce" />
-    <meta
-      name="og:description"
-      content="Fort Lauderdale Chamber of Commerce website practice"
-    />
+    <meta name="og:description" content="Fort Lauderdale Chamber of Commerce website practice" />
     <meta name="og:url" content="https://jishrami.github.io/wdd230/chamber" />
-    <meta
-      name="image"
-      content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg/1280px-Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
+    <meta name="image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg/1280px-Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <title>Join Fort Lauderdale Chamber of Commerce | WDD230 Project</title>
     <link rel="icon" href="favicon.ico" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <img
-        src="images/default.png"
-        alt="Fort Lauderdale Chamber of Commerce Icon"
-        id="logo"
-      />
-      <a id="join" href="https://jishrami.github.io/wdd230/chamber/join.html">
-        Join
-      </a>
-      <button id="menu" title="Menu button"></button>
-      <div id="navigation">
-        <a href="index.html">Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="">Directory</a>
-      </div>
-      <div class="socials" id="social-head">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="images/fb-logo.png" alt="facebook logo"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="images/insta-logo.png" alt="instagram logo"
-        /></a>
-        <a href="https://www.linkedin.com/" target="_blank">
-          <img src="images/linked-logo.png" alt="linkedin logo"
-        /></a>
-      </div>
+        <img src="images/default.png" alt="Fort Lauderdale Chamber of Commerce Icon" id="logo" />
+        <a id="join" href="https://jishrami.github.io/wdd230/chamber/join.html">
+            Join
+        </a>
+        <button id="menu" title="Menu button"></button>
+        <div id="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="">Directory</a>
+        </div>
+        <div class="socials" id="social-head">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/fb-logo.png" alt="facebook logo" /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/insta-logo.png" alt="instagram logo" /></a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linked-logo.png" alt="linkedin logo" /></a>
+        </div>
     </header>
-    <main>
-        <form action="thankyou.html">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label>First Name:*
-                    <input type="text" name="fname" id="fname" required>
-                </label>
-                <label>Last Name:*
-                    <input type="text" name="lname" id="lname" required>
-                </label>
-                <label>Title/Position:
-                    <input type="text" name="title" id="title" pattern="[0-9a-zA-Z\s]{7,}">
-                </label>
-                <label>Email:*
-                    <input type="email" name="email" id="email" required placeholder="e.g. example@example.com">
-                </label>
-                <label>Phone Number:*
-                    <input type="tel" name="phone" id="phone" required placeholder="1235551234">
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Business Information</legend>
-                <label>Business/Organization Name:
-                    <input type="text" name="busname" id="busname" required>
-                </label>
-                <label>Membership Type:
-                    <select name="membership" id="membership">
-                        <option value="">Please Select</option>
-                        <option value="nonprofit">NP - Non-Profit</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
-                <label>Business Description:
-                    <textarea name="busdesc" id="busdesc" cols="30" rows="10"></textarea>
-                </label>
-                <input type="hidden" name="timeStamp" id="timeStamp">
-            </fieldset>
-            <input type="submit" value="Join Our Chamber">
-        </form>
+    <main id="join-main">
+        <h1>Join the Fort Lauderdale Chamber of Commerce</h1>
+        <div class="wf1">
+            <div id="join-form">
+                <form action="thankyou.html">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label>First Name:*
+                            <input type="text" name="fname" id="fname" required>
+                        </label>
+                        <label>Last Name:*
+                            <input type="text" name="lname" id="lname" required>
+                        </label>
+                        <label>Title/Position:
+                            <input type="text" name="title" id="title" pattern="[0-9a-zA-Z\s]{7,}">
+                        </label>
+                        <label>Email:*
+                            <input type="email" name="email" id="email" required placeholder="e.g. example@example.com">
+                        </label>
+                        <label>Phone Number:*
+                            <input type="tel" name="phone" id="phone" required placeholder="1235551234">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label>Business Name/Organization Name:*
+                            <input type="text" name="busname" id="busname" required>
+                        </label>
+                        <label>Membership Type:
+                            <select name="membership" id="membership">
+                                <option value="">Please Select</option>
+                                <option value="nonprofit">NP - Non-Profit</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <label>Business Description:
+                            <textarea name="busdesc" id="busdesc" cols="30" rows="10"></textarea>
+                        </label>
+                        <input type="hidden" name="timeStamp" id="timeStamp">
+                    </fieldset>
+                    <input type="submit" value="Join Our Chamber">
+                </form>
+            </div>
+            <div id="membershipInfo">
+                <h2>Membership Information</h2>
+                <div id="npMem">
+                    <h3>NP - Non-Profit Membership &#x1f3c5;</h3>
+                    <p>$0</p>
+                    <p>Reserved for Non-Profit Organizations</p>
+                    <p>Additional information may be needed</p>
+                </div>
+                <div id="bronzeMem">
+                    <h3>Bronze Membership &#x1F949;</h3>
+                    <p>$250/year</p>
+                    <p>Recommended for smaller businesses (0-100 employees)</p>
+                </div>
+                <div id="silverMem">
+                    <h3>Silver Membership &#x1F948;</h3>
+                    <p>$300/year</p>
+                    <p>Recommended for medium sized businesses (100-500 employees)</p>
+                </div>
+                <div id="goldMem">
+                    <h3>Gold Membership &#x1F947;</h3>
+                    <p>$400/year</p>
+                    <p>Recommended for larger businesses (500+ employees)</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-      <div id="footer-nav">
-        <a href="">JOIN</a>
-        <a href="index.html">Home</a>
-        <a href="../week01/chamber-site-plan.html">Site Plan</a>
-      </div>
-      <div>
-        <p id="year"></p>
-        <p>&copy;</p>
-        <p id="lastModified"></p>
-      </div>
-      <div class="socials" id="social-foot">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="images/fb-logo.png" alt="facebook logo"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="images/insta-logo.png" alt="instagram logo"
-        /></a>
-        <a href="https://www.linkedin.com/" target="_blank">
-          <img src="images/linked-logo.png" alt="linkedin logo"
-        /></a>
-      </div>
+        <div id="footer-nav">
+            <a href="">JOIN</a>
+            <a href="index.html">Home</a>
+            <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        </div>
+        <div>
+            <p id="year"></p>
+            <p>&copy;</p>
+            <p id="lastModified"></p>
+        </div>
+        <div class="socials" id="social-foot">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/fb-logo.png" alt="facebook logo" /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/insta-logo.png" alt="instagram logo" /></a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linked-logo.png" alt="linkedin logo" /></a>
+        </div>
     </footer>
     <script src="scripts/hamburgerButton.js"></script>
     <script src="scripts/getDates.js"></script>
-  </body>
+</body>
+
 </html>

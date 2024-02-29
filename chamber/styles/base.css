@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', Helvetica, sans-serif;
@@ -19,7 +19,7 @@ header {
     padding: 1rem;
     align-items: center;
     justify-content: center;
-}   
+}
 
 #logo {
     height: 175px;
@@ -232,7 +232,118 @@ body {
     margin-bottom: 1rem;
 }
 
+#join-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
 
+.wf1 input:required {
+    border-left: solid 10px rgb(var(--orange));
+}
+
+.wf1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+}
+
+#join-form {
+    width: 50%;
+}
+
+.wf1 legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+    color: rgb(var(--blue));
+}
+
+.wf1 fieldset {
+    border: var(--lightblack) 2px solid;
+    border-radius: 6px;
+    max-width: 1500px;
+}
+
+.wf1 label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    font-size: 1.25rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="tel"],
+.wf1 select,
+.wf1 textarea,
+.wf1 input[type="submit"] {
+    padding: .75rem;
+    border-radius: 6px;
+    margin-top: .5rem;
+    max-width: 800px;
+    width: 80%;
+}
+
+.wf1 select {
+    width: 83%;
+}
+
+.wf1 input[type="submit"] {
+    
+    background-color: rgb(var(--blue));
+    color: #f0fff0;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+}
+
+#membershipInfo {
+    max-width: 400px;
+    padding: 1rem;
+}
+
+#membershipInfo h2 {
+    text-align: center;
+}
+
+#membershipInfo div {
+    border: var(--lightblack) 2px solid;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#npMem {
+    background-color: rgb(var(--gray));
+}
+
+#bronzeMem {
+    background-color: rgba(var(--blue), 0.459);
+}
+
+#silverMem {
+    background-color: rgba(var(--gray), 0.502);
+}
+
+#goldMem {
+    background-color: rgba(var(--orange), 0.459);
+}
+
+#thankyou {
+    text-align: center;
+    padding: 1rem;
+}
 
 footer {
     background-color: rgb(var(--blue));

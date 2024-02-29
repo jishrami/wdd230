@@ -103,6 +103,10 @@
         box-shadow: 0 0 5px 5px #FC513050;
     }
 
+    .wf1 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
     #social-foot {
         display: none;
