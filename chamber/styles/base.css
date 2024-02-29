@@ -4,6 +4,13 @@
     font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
+:root {
+    --blue: 0, 113, 185;
+    --gray: 150, 192, 183;
+    --orange: 252, 81, 48;
+    --lightblack: rgba(0, 0, 0, 0.502);
+}
+
 header {
     background-color: #fff;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
@@ -25,7 +32,7 @@ header {
     font-size: 16pt;
     border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
-    background-color: #0071B9;
+    background-color: rgb(var(--blue));
     color: #f0ffff;
     padding: 0.25rem 0.75rem;
     text-shadow: #96C0B7 0 0 10px;
@@ -36,18 +43,16 @@ header {
 }
 
 #join:hover {
-    color: #0071B9;
-    background-color: #96C0B7;
-    cursor: pointer;
-    animation: none;
+    color: rgb(var(--blue));
+    background-color: rgb(var(--gray));
 }
 
 #menu {
     font-size: 1.5rem;
     border: 2px solid #00000080;
     border-radius: 0.5rem;
-    background-color: #FC5130;
-    color: #0071B9;
+    background-color: rgb(var(--orange));
+    color: rgb(var(--blue));
     padding: 0.25rem 0.75rem;
     position: absolute;
     top: 1rem;
@@ -71,12 +76,12 @@ header {
     transition: transform 0.3s ease-in-out;
     position: absolute;
     font-size: 1.5rem;
-    border: 5px solid #00000080;
+    border: 5px solid var(--lightblack);
     border-radius: 0.5rem;
     padding: 0.25rem 0.75rem;
     top: 4rem;
     right: 0rem;
-    background-color: #0071B9;
+    background-color: rgb(var(--blue));
 }
 
 #navigation.open {
@@ -94,15 +99,15 @@ header {
 }
 
 #navigation a:hover {
-    background-color: #96C0B750;
-    color: #FC5130;
+    background-color: rgba(var(--gray), 0.314);
+    color: rgb(var(--orange));
 }
 
 .socials img {
     width: 25px;
-    border: 2px solid #00000080;
+    border: 2px solid var(--lightblack);
     border-radius: 0.5rem;
-    background-color: #00000080;
+    background-color: var(--lightblack);
 }
 
 #social-head {
@@ -117,7 +122,7 @@ body {
 }
 
 #weather {
-    background-color: #0071b975;
+    background-color: rgba(var(--blue), 0.459);
     text-align: center;
     margin: 1rem;
     padding: .5rem;
@@ -155,21 +160,21 @@ body {
 }
 
 #events-banner {
-    background-color: #0071b975;
+    background-color: rgba(var(--blue), 0.459);
     text-align: center;
     margin: 1rem;
     padding: .5rem;
 }
 
 #past-events {
-    background-color: #0071b975;
+    background-color: rgba(var(--blue), 0.459);
     text-align: center;
     margin: 1rem;
     padding: .5rem;
 }
 
 #board {
-    background-color: #0071b975;
+    background-color: rgba(var(--blue), 0.459);
     text-align: center;
     margin: 1rem;
     padding: .5rem;
@@ -184,14 +189,14 @@ body {
 }
 
 #discover-sidebar {
-    background-color: #96C0B780;
+    background-color: rgba(var(--gray), 0.502);
     margin-bottom: 1rem;
-    color: #0071B9;
+    color: rgb(var(--blue));
 }
 
 #discover-sidebar div {
     padding: 1rem;
-    border: #FC5130 2px solid;
+    border: rgb(var(--orange)) 2px solid;
     margin: 1rem;
     border-radius: 0.5rem;
     height: fit-content;
@@ -228,8 +233,9 @@ body {
 }
 
 
+
 footer {
-    background-color: #0071B9;
+    background-color: rgb(var(--blue));
     color: #fff;
     text-align: center;
     font-size: 12pt;
