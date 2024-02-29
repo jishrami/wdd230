@@ -8,7 +8,7 @@
       name="description"
       content="Fort Lauderdale Chamber of Commerce website practice"
     />
-    <meta name="og:title" content="Fort Lauderdale Chamber of Commerce Discover Page" />
+    <meta name="og:title" content="Fort Lauderdale Chamber of Commerce" />
     <meta
       name="og:description"
       content="Fort Lauderdale Chamber of Commerce website practice"
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <title>Fort Lauderdale Chamber of Commerce Discover Page | WDD230 Project</title>
+    <title>Join Fort Lauderdale Chamber of Commerce | WDD230 Project</title>
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
@@ -35,7 +35,7 @@
         alt="Fort Lauderdale Chamber of Commerce Icon"
         id="logo"
       />
-      <a id="join" href="join.html">
+      <a id="join" href="https://jishrami.github.io/wdd230/chamber/join.html">
         Join
       </a>
       <button id="menu" title="Menu button"></button>
@@ -57,60 +57,50 @@
       </div>
     </header>
     <main>
-      <div id="discover-main">
-        <div id="discover-sidebar">
-          <h1>Discover Beautiful Fort Lauderdale</h1>
-          <div id="discoverVisits"></div>
-          <h2>News:</h2>
-          <div id="discover-events">
-            <h2>Events</h2>
-            <p>Check out upcoming events</p>
-            <div id="event-list"></div>
-          </div>
-          <div id="discover-population">
-            <h2>Population</h2>
-            <p>Check out population statistics</p>
-            <p id="discover-population-num">183,156</p>
-          </div>
-        </div>
-        <div id="discover-content">
-          <img
-            src="images/beachfront.webp"
-            alt="overhead image of a beach"
-            loading="lazy"
-          />
-          <img
-            src="images/lifegaurd.webp"
-            alt="image of a life guard stand on a beach"
-            loading="lazy"
-          />
-          <img
-            src="images/palm-shade.webp"
-            alt="image of a group of palm trees as seen from underneath"
-            loading="lazy"
-          />
-          <img
-            src="images/palm.webp"
-            alt="image of a palm tree in front of the ocean"
-            loading="lazy"
-          />
-          <img
-            src="images/river.webp"
-            alt="overhead image of a winding river"
-            loading="lazy"
-          />
-          <img
-            src="images/sunset-beach.webp"
-            alt="image of a sunset on a beach"
-            loading="lazy"
-          />
-        </div>
-      </div>
+        <form action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name:*
+                    <input type="text" name="fname" id="fname" required>
+                </label>
+                <label>Last Name:*
+                    <input type="text" name="lname" id="lname" required>
+                </label>
+                <label>Title/Position:
+                    <input type="text" name="title" id="title" pattern="[0-9a-zA-Z\s]{7,}">
+                </label>
+                <label>Email:*
+                    <input type="email" name="email" id="email" required placeholder="e.g. example@example.com">
+                </label>
+                <label>Phone Number:*
+                    <input type="tel" name="phone" id="phone" required placeholder="1235551234">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization Name:
+                    <input type="text" name="busname" id="busname" required>
+                </label>
+                <label>Membership Type:
+                    <select name="membership" id="membership">
+                        <option value="">Please Select</option>
+                        <option value="nonprofit">NP - Non-Profit</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Business Description:
+                    <textarea name="busdesc" id="busdesc" cols="30" rows="10"></textarea>
+                </label>
+                <input type="hidden" name="timeStamp" id="timeStamp">
+            </fieldset>
+            <input type="submit" value="Join Our Chamber">
+        </form>
     </main>
-
     <footer>
       <div id="footer-nav">
-        <a href="join.html">JOIN</a>
+        <a href="">JOIN</a>
         <a href="index.html">Home</a>
         <a href="../week01/chamber-site-plan.html">Site Plan</a>
       </div>
@@ -133,6 +123,5 @@
     </footer>
     <script src="scripts/hamburgerButton.js"></script>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/pageVisits.js"></script>
   </body>
 </html>
