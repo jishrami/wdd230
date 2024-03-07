@@ -1,144 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="og:title" content="Josh Ramirez - WDD 230" />
-    <meta
-      name="og:description"
-      content="Web Frontend Development projects for Winter 2024 at BYU-Idaho."
-    />
-    <meta
-      name="description"
-      content="Web Frontend Development projects for WDD230 Winter 2024 at BYU-Idaho."
-    />
-    <meta name="author" content="Josh Ramirez" />
-    <meta name="og:url" content="https://jishrami.github.io/wdd230" />
-    <meta
-      name="og:image"
-      content="https://media.istockphoto.com/id/483656343/photo/tucson-arizona-skyline-cityscape-framed-by-saguaro-cactus-and-mountains.jpg?s=2048x2048&w=is&k=20&c=BEGI2hQUDXEAX5EiL6r9Yzkry20-dO2s2Nt_pABT7HU="
-    />
-    <meta name="og:type" content="website" />
-    <title>Josh Ramirez - WDD 230 - Web Frontend Development</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Kanit"
-    />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="icon" href="favicon.ico" />
-  </head>
-  <body>
-    <header>
-      <button id="menu" title="Menu"></button>
-      <img src="images/josh-profile.webp" alt="Josh Ramirez profile picture" />
-      <span>Josh Ramirez</span>
-      <button id="dark-mode" title="Toggle Dark Mode"></button>
-    </header>
-    <nav id="navigation">
-      <a href="index.html" id="home">Home</a>
-      <a href="chamber/index.html">Chamber</a>
-      <a href="week01/chamber-site-plan.html">Site Plan</a>
-      <a href="form.html">Form</a>
-    </nav>
-    <main>
-      <div id="hero">
-        <picture id="hero-img">
-          <source
-            media="(max-width: 749px)"
-            srcset="images/tucson-temple-vsmall.webp"
-          />
-          <source
-            media="(max-width: 850px)"
-            srcset="images/tucson-temple-small.webp"
-          />
-          <source
-            media="(max-width: 1000px)"
-            srcset="images/tucson-temple-medium.webp"
-          />
-          <img
-            src="images/tucson-temple-large.webp"
-            alt="image of the Tucson temple"
-            loading="lazy"
-          />
-        </picture>
-        <div id="hero-txt">
-          <p>Tucson Temple</p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="og:title" content="Josh Ramirez - WDD 230" />
+  <meta name="og:description" content="Web Frontend Development projects for Winter 2024 at BYU-Idaho." />
+  <meta name="description" content="Web Frontend Development projects for WDD230 Winter 2024 at BYU-Idaho." />
+  <meta name="author" content="Josh Ramirez" />
+  <meta name="og:url" content="https://jishrami.github.io/wdd230" />
+  <meta name="og:image"
+    content="https://media.istockphoto.com/id/483656343/photo/tucson-arizona-skyline-cityscape-framed-by-saguaro-cactus-and-mountains.jpg?s=2048x2048&w=is&k=20&c=BEGI2hQUDXEAX5EiL6r9Yzkry20-dO2s2Nt_pABT7HU=" />
+  <meta name="og:type" content="website" />
+  <title>Josh Ramirez - WDD 230 - Web Frontend Development</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <button id="menu" title="Menu"></button>
+    <img src="images/josh-profile.webp" alt="Josh Ramirez profile picture" />
+    <span>Josh Ramirez</span>
+    <button id="dark-mode" title="Toggle Dark Mode"></button>
+  </header>
+  <nav id="navigation">
+    <a href="index.html" id="home">Home</a>
+    <a href="chamber/index.html">Chamber</a>
+    <a href="week01/chamber-site-plan.html">Site Plan</a>
+    <a href="form.html">Form</a>
+  </nav>
+  <main>
+    <div id="hero">
+      <picture id="hero-img">
+        <source media="(max-width: 749px)" srcset="images/tucson-temple-vsmall.webp" />
+        <source media="(max-width: 850px)" srcset="images/tucson-temple-small.webp" />
+        <source media="(max-width: 1000px)" srcset="images/tucson-temple-medium.webp" />
+        <img src="images/tucson-temple-large.webp" alt="image of the Tucson temple" loading="lazy" />
+      </picture>
+      <div id="hero-txt">
+        <p>Tucson Temple</p>
       </div>
-      <h1 id="indexh1">WDD 230: Web Frontend Development</h1>
-      <section class="card" id="activities">
-        <h2>Learning Activities</h2>
-        <ul>
-          <li>
-            Week 01: <a href="week01/holygrail.html">Layout</a> |
-            <a href="week01/media-query.html">Media Query</a> |
-            <a href="https://codepen.io/jishrami/pen/GReqXWg" target="_blank"
-              >JS Pen</a
-            >
-          </li>
-          <li>
-            Week 02: <a href="week02/design.html">Design Principles</a> |
-            <a href="https://codepen.io/jishrami/pen/zYbdjLO" target="_blank"
-              >Responsive Menu</a
-            >
-            | <a href="week02/bom.html">DOM Manipulation</a>
-          </li>
-          <li>
-            Week 03: <a href="week03/images/landscape.webp">WebP</a> |
-            <a href="week03/lazyload.html">Lazy Loading</a> |
-            <a href="week03/responsive-images.html">Responsive Images</a> |
-            <a href="week03/bom.html">Web Storage</a>
-          </li>
-          <li>
-            Week 04:
-            <a href="https://codepen.io/jishrami/pen/rNRgZwa" target="_blank"
-              >Pseudo-Classes</a
-            >
-            |
-            <a href="week04/images/combinator.webp" target="_blank"
-              >Combinators</a
-            >
-            |
-            <a href="week04/tablebuild.html" target="_blank">Data Tables</a> |
-            <a href="week04/Form-start/index.html" target="_blank">HTML Forms</a>
-          </li>
-          <li>Week 05: <a href="https://codepen.io/jishrami/pen/rNbxBbQ?editors=1100" target="_blank">Pseudo-elements</a> | </li>
-          <li>Week 06:</li>
-        </ul>
-      </section>
-      <section class="card" id="information">
-        <h2>Information</h2>
-        <ul id="info-content">
-          <li>Weather: <span id="weather">Sunny</span></li>
-          <li>Location: <span id="location">Tucson, AZ</span></li>
-          <li>Visits: <span id="visits"></span></li>
-        </ul>
-      </section>
-      <section id="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216178.25494766948!2d-111.04861736752127!3d32.15609388057537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d665410b2ced2b%3A0x73c32d384d16c715!2sTucson%2C%20AZ!5e0!3m2!1sen!2sus!4v1707837988849!5m2!1sen!2sus"
-          width="500"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <p>&copy; <span id="year"></span></p>
-        <p>Josh Ramirez</p>
-        <p>United States</p>
-      </div>
-      <p id="lastModified">Last Modification:</p>
-    </footer>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamburgerButton.js"></script>
-    <script src="scripts/darkMode.js"></script>
-    <script src="scripts/pageCounter.js"></script>
-  </body>
+    </div>
+    <h1 id="indexh1">WDD 230: Web Frontend Development</h1>
+    <section class="card" id="activities">
+      <h2>Learning Activities</h2>
+      <ul>
+        <li>
+          Week 01: <a href="week01/holygrail.html">Layout</a> |
+          <a href="week01/media-query.html">Media Query</a> |
+          <a href="https://codepen.io/jishrami/pen/GReqXWg" target="_blank">JS Pen</a>
+        </li>
+        <li>
+          Week 02: <a href="week02/design.html">Design Principles</a> |
+          <a href="https://codepen.io/jishrami/pen/zYbdjLO" target="_blank">Responsive Menu</a>
+          | <a href="week02/bom.html">DOM Manipulation</a>
+        </li>
+        <li>
+          Week 03: <a href="week03/images/landscape.webp">WebP</a> |
+          <a href="week03/lazyload.html">Lazy Loading</a> |
+          <a href="week03/responsive-images.html">Responsive Images</a> |
+          <a href="week03/bom.html">Web Storage</a>
+        </li>
+        <li>
+          Week 04:
+          <a href="https://codepen.io/jishrami/pen/rNRgZwa" target="_blank">Pseudo-Classes</a>
+          |
+          <a href="week04/images/combinator.webp" target="_blank">Combinators</a>
+          |
+          <a href="week04/tablebuild.html" target="_blank">Data Tables</a> |
+          <a href="week04/Form-start/index.html" target="_blank">HTML Forms</a>
+        </li>
+        <li>Week 05: <a href="https://codepen.io/jishrami/pen/rNbxBbQ?editors=1100" target="_blank">Pseudo-elements</a>
+          | <a href="week05/prophets.html" target="_blank">Prophets Fetch practice</a> | </li>
+        <li>Week 06:</li>
+      </ul>
+    </section>
+    <section class="card" id="information">
+      <h2>Information</h2>
+      <ul id="info-content">
+        <li>Weather: <span id="weather">Sunny</span></li>
+        <li>Location: <span id="location">Tucson, AZ</span></li>
+        <li>Visits: <span id="visits"></span></li>
+      </ul>
+    </section>
+    <section id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216178.25494766948!2d-111.04861736752127!3d32.15609388057537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d665410b2ced2b%3A0x73c32d384d16c715!2sTucson%2C%20AZ!5e0!3m2!1sen!2sus!4v1707837988849!5m2!1sen!2sus"
+        width="500" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>&copy; <span id="year"></span></p>
+      <p>Josh Ramirez</p>
+      <p>United States</p>
+    </div>
+    <p id="lastModified">Last Modification:</p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/hamburgerButton.js"></script>
+  <script src="scripts/darkMode.js"></script>
+  <script src="scripts/pageCounter.js"></script>
+</body>
+
 </html>

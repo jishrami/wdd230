@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    align-items: center;
+}
+
+#cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+#cards section p {
+    padding: .25rem;
+}
+
+footer {
+    text-align: center;
+}
