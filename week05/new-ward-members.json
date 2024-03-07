@@ -1,0 +1,19 @@
+{
+    "familyName": "Smith",
+    "dateJoined": "2022-01-01",
+    "bishopVisit" : false,
+    "numOfRecords" : 2,
+    "records" :
+    [
+        {
+            "firstName" : "Philo",
+            "gender" : "male",
+            "dateOfBirth" : "1999-01-01"
+        },
+        {
+            "firstName" : "Mary",
+            "gender" : "female",
+            "dateOfBirth" : "2000-01-01"
+        }
+    ]
+}
