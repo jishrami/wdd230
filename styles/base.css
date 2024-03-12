@@ -158,6 +158,12 @@ main li {
     height: 100%;
 }
 
+#weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #activities {
     grid-row: 2/3;
     margin-bottom: 1em;
