@@ -1,15 +1,15 @@
 {
     "weeks": [
         {
-            "week": "Week 1",
+            "week": "Week 01",
             "links": [
                 {
                     "url": "week01/holygrail.html",
-                    "title": "holygrail layout"
+                    "title": "Holy Grail"
                 },
                 {
                     "url": "week01/media-query.html",
-                    "title": "media query"
+                    "title": "Media Query"
                 },
                 {
                     "url": "https://codepen.io/jishrami/pen/GReqXWg",
