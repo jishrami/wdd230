@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "holygrail layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "media query"
+                },
+                {
+                    "url": "https://codepen.io/jishrami/pen/GReqXWg",
+                    "title": "JS codepen"
+                }
+            ]
+        },
+        {
+            "week": "Week 02",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/jishrami/pen/zYbdjLO",
+                    "title": "Responsive Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Web Storage"
+                }
+            ]
+        },
+        {
+            "week": "Week 04",
+            "links": [
+                {
+                    "url": "https://codepen.io/jishrami/pen/rNRgZwa",
+                    "title": "Pseudo-Classes"
+                },
+                {
+                    "url": "week04/images/combinator.webp",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Data Tables"
+                },
+                {
+                    "url": "week04/Form-start/index.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "links": [
+                {
+                    "url": "https://codepen.io/jishrami/pen/rNbxBbQ?editors=1100",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets Fetch practice"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API practice"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON practice"
+                }
+            ]
+        }
+    ]
+}
