@@ -1,0 +1,68 @@
+{
+    "companies": [
+      {
+        "name": "Tech Innovations Inc.",
+        "address": "123 Main St, Fort Lauderdale, FL, 33301",
+        "phone": "+1-234-567-8901",
+        "website": "http://www.techinnovations.com",
+        "image_url": "https://cdn.pixabay.com/photo/2017/01/13/01/22/rocket-1976107_640.png",
+        "membership_level": "Gold",
+        "other_info": "Leading provider of cutting-edge technology solutions."
+      },
+      {
+        "name": "Global Solutions Corp.",
+        "address": "456 Elm St, Fort Lauderdale, FL, 33302",
+        "phone": "+1-345-678-9012",
+        "website": "http://www.globalsolutions.com",
+        "image_url": "https://cdn.pixabay.com/photo/2015/11/26/16/28/vintage-1064142_640.png",
+        "membership_level": "Silver",
+        "other_info": "Offering comprehensive business solutions for global markets."
+      },
+      {
+        "name": "Bright Future Enterprises",
+        "address": "789 Oak St, Fort Lauderdale, FL, 33303",
+        "phone": "+1-456-789-0123",
+        "website": "http://www.brightfuture.com",
+        "image_url": "https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png",
+        "membership_level": "nonprofit",
+        "other_info": "Empowering businesses with innovative strategies for success."
+      },
+      {
+        "name": "Visionary Technologies Ltd.",
+        "address": "101 Pine St, Fort Lauderdale, FL, 33304",
+        "phone": "+1-567-890-1234",
+        "website": "http://www.visionarytech.com",
+        "image_url": "https://cdn.pixabay.com/photo/2017/01/31/23/42/animal-2028258_1280.png",
+        "membership_level": "Gold",
+        "other_info": "Pioneering the future of technology with visionary solutions."
+      },
+      {
+        "name": "Digital Dynamics LLC",
+        "address": "202 Cedar St, Fort Lauderdale, FL, 33305",
+        "phone": "+1-678-901-2345",
+        "website": "http://www.digitaldynamics.com",
+        "image_url": "https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916_640.png",
+        "membership_level": "Bronze",
+        "other_info": "Driving digital transformation with dynamic solutions."
+      },
+      {
+        "name": "Innovate IT Solutions",
+        "address": "303 Maple St, Fort Lauderdale, FL, 33306",
+        "phone": "+1-789-012-3456",
+        "website": "http://www.innovateit.com",
+        "image_url": "https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_640.png",
+        "membership_level": "Silver",
+        "other_info": "Delivering innovative IT solutions for businesses worldwide."
+      },
+      {
+        "name": "FutureTech Industries",
+        "address": "404 Walnut St, Fort Lauderdale, FL, 33307",
+        "phone": "+1-890-123-4567",
+        "website": "http://www.futuretechindustries.com",
+        "image_url": "https://cdn.pixabay.com/photo/2014/04/02/10/40/tree-304181_640.png",
+        "membership_level": "Gold",
+        "other_info": "Shaping the future of industries with advanced technology."
+      }
+    ]
+  }
+  

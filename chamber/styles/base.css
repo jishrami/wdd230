@@ -345,6 +345,84 @@ body {
     padding: 1rem;
 }
 
+.directory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.board {
+    width: 100%;
+}
+
+.member-section {
+    width: 90%;
+}
+
+#directory-buttons button {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(var(--blue));
+    color: rgb(var(--gray));
+    border-radius: 6px;
+    border: var(--lightblack) 2px solid;
+}
+
+#directory-buttons button:hover {
+    background-color: rgba(var(--gray), 0.314);
+    color: rgb(var(--blue));
+    cursor: pointer;
+}
+
+.board {
+    align-items: center;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    border: var(--lightblack) 2px solid;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+}
+
+.member-card:hover {
+    background-color: rgba(var(--gray), 0.314);
+    transform: scale(1.01);
+    transition: transform 0.25s ease-in-out;
+}
+
+.gridView {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.listView {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.listView .member-card {
+    flex-direction: row;
+}
+
+.listView img {
+    display: none;
+}   
+
+.member-logo {
+    height: auto;
+    max-width: 150px;
+    border-radius: 50%;
+} 
+
 footer {
     background-color: rgb(var(--blue));
     color: #fff;
