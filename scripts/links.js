@@ -22,6 +22,7 @@ function displayLinks(weeks) {
                 linkItem.href = url.pathname + url.search + url.hash;
             } else {
                 linkItem.href = url.href;
+                linkItem.target = "_blank";
             }
             linkItem.textContent = link.title;
             weekItem.appendChild(linkItem);
