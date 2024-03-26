@@ -121,11 +121,14 @@ body {
     overflow-x: hidden;
 }
 
-#weather {
+#weather-banner {
     background-color: rgba(var(--blue), 0.459);
-    text-align: center;
     margin: 1rem;
     padding: .5rem;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 #ten-day {

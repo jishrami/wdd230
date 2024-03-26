@@ -46,23 +46,6 @@
         right: 8rem;
     }
 
-    #weather {
-        display: flex;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #weather div h3, #weather div p {
-        display: inline-block;
-    }
-    
-    #ten-day {
-        display: flex;
-        justify-content: right;
-    }
-
     #past-events {
         display: flex;
         flex-direction: column;
