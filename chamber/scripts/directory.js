@@ -29,9 +29,29 @@ function displayDirectory(members) {
         const section = document.createElement("section");
         section.setAttribute("class", "member-section");
 
+        let membLvlIcon = "";
+
+        if (member.membership_level === "Gold") {
+            membLvlIcon = "&#x1f947;";
+        }
+
+        if (member.membership_level === "Silver") {
+            membLvlIcon = "&#x1f948;";
+        }
+
+        if (member.membership_level === "Bronze") {
+
+            membLvlIcon = "&#x1f949;";
+        }
+
+        if (member.membership_level === "nonprofit") {
+            membLvlIcon = "&#x1F3C5;";
+        }
+
         const card = `
         <div class="member-card">
             <h2>${member.name}</h2>
+            <h3>${member.membership_level} ${membLvlIcon}</h3>
             <img src="${member.image_url}" alt="${member.name}" class="member-logo">
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank">${member.website}</a>
