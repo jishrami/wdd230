@@ -24,9 +24,9 @@ function spotlightDirectory(members) {
     
     for (const member of selectedMembers) {
         const spotlightCard = `
-        <div class="spotlight-card">
+        <div class="member-card" id="spotlight-card">
             <h2>${member.name}</h2>
-            <h3>${member.membership_level}</h3>
+            <h3>${member.membership_level} </h3>
             <img src="${member.image_url}" alt="${member.name}" class="spotlight-logo" loading="lazy">
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank">${member.website}</a>

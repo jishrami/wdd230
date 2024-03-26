@@ -400,6 +400,21 @@ body {
     transition: transform 0.25s ease-in-out;
 }
 
+#spotlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#spotlight-card {
+    height: 375px;
+}
+
+.spotlight-logo {
+    max-width: 200px;
+}
+
 .gridView {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
