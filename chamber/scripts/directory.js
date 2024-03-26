@@ -5,10 +5,11 @@ async function getDirectory() {
     const data = await response.json();
     console.log(data);
     displayDirectory(data);
+    spotlightDirectory(data);
 }
 
 function displayDirectory(members) {
-    const main = document.querySelector("main");
+    const main = document.querySelector("#dir-main");
     main.setAttribute("class", "directory");
 
     const buttons = `
