@@ -61,6 +61,15 @@
         margin: 10px auto;
     }
 
+    #hero-txt {
+        font-size: larger;
+    }
+    
+
+    #spotlight {
+        flex-direction: row;
+    }
+
     #discover-main {
         display: grid;
         grid-template-columns: .5fr 1fr;

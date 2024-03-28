@@ -1,117 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Josh Ramirez" />
-    <meta
-      name="description"
-      content="Fort Lauderdale Chamber of Commerce website practice"
-    />
-    <meta name="og:title" content="Fort Lauderdale Chamber of Commerce" />
-    <meta
-      name="og:description"
-      content="Fort Lauderdale Chamber of Commerce website practice"
-    />
-    <meta name="og:url" content="https://jishrami.github.io/wdd230/chamber" />
-    <meta
-      name="image"
-      content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg/1280px-Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <title>Fort Lauderdale Chamber of Commerce | WDD230 Project</title>
-    <link rel="icon" href="favicon.ico" />
-  </head>
-  <body>
-    <div id="banner">
-      <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
-      <button id="close">X</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Josh Ramirez" />
+  <meta name="description" content="Fort Lauderdale Chamber of Commerce website practice" />
+  <meta name="og:title" content="Fort Lauderdale Chamber of Commerce" />
+  <meta name="og:description" content="Fort Lauderdale Chamber of Commerce website practice" />
+  <meta name="og:url" content="https://jishrami.github.io/wdd230/chamber" />
+  <meta name="image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg/1280px-Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <title>Fort Lauderdale Chamber of Commerce | WDD230 Project</title>
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+  <div id="banner">
+    <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+    <button id="close">X</button>
+  </div>
+  <header>
+    <img src="images/default.png" alt="Fort Lauderdale Chamber of Commerce Icon" id="logo" />
+    <a id="join" href="join.html">
+      Join
+    </a>
+    <button id="menu" title="Menu button"></button>
+    <div id="navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
     </div>
-    <header>
-      <img
-        src="images/default.png"
-        alt="Fort Lauderdale Chamber of Commerce Icon"
-        id="logo"
-      />
-      <a id="join" href="join.html">
-        Join
-      </a>
-      <button id="menu" title="Menu button"></button>
-      <div id="navigation">
-        <a href="index.html">Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="directory.html">Directory</a>
-      </div>
-      <div class="socials" id="social-head">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="images/fb-logo.png" alt="facebook logo"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="images/insta-logo.png" alt="instagram logo"
-        /></a>
-        <a href="https://www.linkedin.com/" target="_blank">
-          <img src="images/linked-logo.png" alt="linkedin logo"
-        /></a>
-      </div>
-    </header>
-    <main>
-      <section id="weather-banner">
-        <div id="weather"></div>
-        <div id="three-day"></div>
-      </section>
-      <section id="hero">
-        <img src="images/skyline.jpg" alt="Fort Lauderdale skyline" />
+    <div class="socials" id="social-head">
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="images/fb-logo.webp" alt="facebook logo" /></a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/insta-logo.webp" alt="instagram logo" /></a>
+      <a href="https://www.linkedin.com/" target="_blank">
+        <img src="images/linked-logo.webp" alt="linkedin logo" /></a>
+    </div>
+  </header>
+  <main>
+    <section id="weather-banner">
+      <div id="weather"></div>
+      <div id="three-day"></div>
+    </section>
+    <section id="hero">
+      <img src="images/skyline-large.webp" alt="Fort Lauderdale skyline" loading="lazy"/>
+      <div id="hero-text">
         <h1>Fort Lauderdale Area Chamber of Commerce</h1>
         <h2>Bringing our community together, one business at a time</h2>
-      </section>
-      <section id="events-banner">
-        <h3>Events</h3>
-        <p>Check out upcoming events</p>
-      </section>
-      <section id="past-events">
-        <h3>Past Events</h3>
-        <p>Check out past events</p>
-      </section>
-      <section id="board">
-        <h3>Board of Directors</h3>
-        <p>Meet our board of directors</p>
-      </section>
-      <section id="spotlight">
-      </section>
-    </main>
+      </div>
+    </section>
+    <section id="events-banner">
+      <h3>Events</h3>
+      <p>Check out upcoming events</p>
+    </section>
+    <section id="past-events">
+      <h3>Past Events</h3>
+      <p>Check out past events</p>
+    </section>
+    <section id="board">
+      <h3>Board of Directors</h3>
+      <p>Meet our board of directors</p>
+    </section>
+    <section id="spotlight">
+    </section>
+  </main>
 
-    <footer>
-      <div id="footer-nav">
-        <a href="join.html">JOIN</a>
-        <a href="index.html">Home</a>
-        <a href="../week01/chamber-site-plan.html">Site Plan</a>
-      </div>
-      <div>
-        <p id="year"></p>
-        <p>&copy;</p>
-        <p id="lastModified"></p>
-      </div>
-      <div class="socials" id="social-foot">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="images/fb-logo.png" alt="facebook logo"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="images/insta-logo.png" alt="instagram logo"
-        /></a>
-        <a href="https://www.linkedin.com/" target="_blank">
-          <img src="images/linked-logo.png" alt="linkedin logo"
-        /></a>
-      </div>
-    </footer>
-    <script src="scripts/hamburgerButton.js"></script>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/main-directory.js"></script>
-  </body>
+  <footer>
+    <div id="footer-nav">
+      <a href="join.html">JOIN</a>
+      <a href="index.html">Home</a>
+      <a href="../week01/chamber-site-plan.html">Site Plan</a>
+    </div>
+    <div>
+      <p id="year"></p>
+      <p>&copy;</p>
+      <p id="lastModified"></p>
+    </div>
+    <div class="socials" id="social-foot">
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="images/fb-logo.webp" alt="facebook logo" /></a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/insta-logo.webp" alt="instagram logo" /></a>
+      <a href="https://www.linkedin.com/" target="_blank">
+        <img src="images/linked-logo.webp" alt="linkedin logo" /></a>
+    </div>
+  </footer>
+  <script src="scripts/hamburgerButton.js"></script>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/main-directory.js"></script>
+</body>
+
 </html>

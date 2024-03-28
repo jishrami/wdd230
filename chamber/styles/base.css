@@ -9,6 +9,7 @@
     --gray: 150, 192, 183;
     --orange: 252, 81, 48;
     --lightblack: rgba(0, 0, 0, 0.502);
+    --radius: 6px;
 }
 
 #banner {
@@ -27,8 +28,6 @@
     border: none;
 }
 
-
-
 header {
     background-color: #fff;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
@@ -44,7 +43,6 @@ header {
     margin: 0 auto;
     object-fit: contain;
 }
-
 
 #join {
     font-size: 16pt;
@@ -147,6 +145,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: row;
+    border-radius: var(--radius);
 }
 
 #ten-day {
@@ -154,30 +153,21 @@ body {
 }
 
 #hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
 }
 
 #hero img {
-    margin: 0 auto;
-    height: 400px;
-    grid-column: 1/3;
-    width: 96%;
-    opacity: .5;
-    grid-row: 1/4;
-    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-#hero h1 {
-    margin-left: 10%;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-#hero h2 {
-    margin-left: 10%;
-    grid-column: 1/2;
-    grid-row: 2/3;
+#hero-text{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(var(--gray), 0.314);
+    border-radius: var(--radius);
 }
 
 #events-banner {
@@ -185,6 +175,7 @@ body {
     text-align: center;
     margin: 1rem;
     padding: .5rem;
+    border-radius: var(--radius);
 }
 
 #past-events {
@@ -192,6 +183,7 @@ body {
     text-align: center;
     margin: 1rem;
     padding: .5rem;
+    border-radius: var(--radius);
 }
 
 #board {
@@ -199,6 +191,7 @@ body {
     text-align: center;
     margin: 1rem;
     padding: .5rem;
+    border-radius: var(--radius);
 }
 
 #discover-main {
@@ -288,7 +281,7 @@ body {
 
 .wf1 fieldset {
     border: var(--lightblack) 2px solid;
-    border-radius: 6px;
+    border-radius: var(--radius);
     max-width: 1500px;
 }
 
@@ -306,7 +299,7 @@ body {
 .wf1 textarea,
 .wf1 input[type="submit"] {
     padding: .75rem;
-    border-radius: 6px;
+    border-radius: var(--radius);
     margin-top: .5rem;
     max-width: 800px;
     width: 80%;
@@ -340,7 +333,7 @@ body {
 
 #membershipInfo div {
     border: var(--lightblack) 2px solid;
-    border-radius: 6px;
+    border-radius: var(--radius);
     padding: 1rem;
     margin: 1rem;
 }
@@ -388,7 +381,7 @@ body {
     font-size: 1.25rem;
     background-color: rgb(var(--blue));
     color: rgb(var(--gray));
-    border-radius: 6px;
+    border-radius: var(--radius);
     border: var(--lightblack) 2px solid;
 }
 
@@ -406,7 +399,7 @@ body {
     display: flex;
     flex-direction: column;
     border: var(--lightblack) 2px solid;
-    border-radius: 6px;
+    border-radius: var(--radius);
     padding: 1rem;
     margin: 1rem;
     align-items: center;
@@ -420,7 +413,7 @@ body {
 
 #spotlight {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -442,7 +435,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
 }
 
 .listView .member-card {
