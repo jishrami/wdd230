@@ -28,14 +28,15 @@
         padding: 0;
     }
 
-    #navigation a:nth-child(2), #navigation a:nth-child(3) {
+    #navigation a:nth-child(2),
+    #navigation a:nth-child(3) {
         margin-left: 3rem;
     }
 
     #navigation a:hover {
         border-radius: 0.5rem;
         text-decoration: underline #0071B9 3px;
-        text-underline-offset: 4px; 
+        text-underline-offset: 4px;
     }
 
     #social-head {
@@ -64,7 +65,7 @@
     #hero-txt {
         font-size: larger;
     }
-    
+
 
     #spotlight {
         flex-direction: row;
@@ -73,7 +74,7 @@
     #discover-main {
         display: grid;
         grid-template-columns: .5fr 1fr;
-        
+
     }
 
     #discover-sidebar {

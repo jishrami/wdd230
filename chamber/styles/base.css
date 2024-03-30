@@ -162,7 +162,7 @@ body {
     height: 100%;
 }
 
-#hero-text{
+#hero-text {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -310,7 +310,7 @@ body {
 }
 
 .wf1 input[type="submit"] {
-    
+
     background-color: rgb(var(--blue));
     color: #f0fff0;
     width: 100%;
@@ -443,13 +443,13 @@ body {
 
 .listView img {
     display: none;
-}   
+}
 
 .member-logo {
     height: auto;
     max-width: 150px;
     border-radius: 50%;
-} 
+}
 
 footer {
     background-color: rgb(var(--blue));
