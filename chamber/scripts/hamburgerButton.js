@@ -15,7 +15,7 @@ bannerClose.addEventListener('click', () => {
 
 function closedBanner() {
 	if (day.getDay() === 1 || day.getDay() === 2 || day.getDay() === 3) {
-		banner.style.display = "block";
+		banner.style.display = "flex";
 	}
 	else {
 		banner.style.display = "none";
