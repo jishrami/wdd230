@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 :root {
@@ -12,9 +13,14 @@
     --radius: 6px;
 }
 
+body {
+    max-width: 100%;
+    overflow-x : hidden;
+}
+
 #banner {
     background-color: rgb(var(--gray));
-    position: sticky;
+   
     top: 0;
     z-index: 1;
     font-size: 2rem;
@@ -88,8 +94,8 @@ header {
 }
 
 #navigation {
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    display: none;
+    /* transition: transform 0.3s ease-in-out; */
     position: absolute;
     font-size: 1.5rem;
     border: 5px solid var(--lightblack);
@@ -102,8 +108,21 @@ header {
 
 #navigation.open {
     display: block;
-    transform: translateX(-1rem);
-    transition: transform 0.3s ease-in-out;
+    /* transform: translateX(-1rem);
+    transition: transform 0.3s ease-in-out; */
+    animation: closeMenu 0.3s ease-in-out; 
+}
+
+@keyframes closeMenu {
+    0% {
+        display: block;
+    }
+    1% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-1rem);
+    }
 }
 
 #navigation a {
@@ -459,6 +478,16 @@ footer {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+#social-foot {
+    display: flex;
     align-items: center;
 }
 
