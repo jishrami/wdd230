@@ -220,13 +220,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem auto;
+    margin: 2rem;
 }
 
 #discover-sidebar {
     background-color: rgba(var(--gray), 0.502);
     margin-bottom: 1rem;
     color: rgb(var(--blue));
+    border-radius: var(--radius);
 }
 
 #discover-sidebar div {
@@ -235,6 +236,10 @@ body {
     margin: 1rem;
     border-radius: 0.5rem;
     height: fit-content;
+}
+
+#discover-sidebar * {
+    padding: .5em;
 }
 
 #discoverVisits {
@@ -265,6 +270,7 @@ body {
 #discover-content img {
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: var(--radius);
 }
 
 #join-main {
@@ -286,10 +292,6 @@ body {
     align-items: center;
     margin: 1rem;
     width: 100%;
-}
-
-#join-form {
-    width: 50%;
 }
 
 .wf1 legend {
@@ -377,7 +379,8 @@ body {
 
 #thankyou {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
+    font-size: 2em;
 }
 
 .directory {
