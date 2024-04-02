@@ -14,23 +14,22 @@
 
 body {
     max-width: 100%;
-    overflow-x : hidden;
+    overflow-x: hidden;
 }
 
 #banner {
-    background-color: rgb(var(--gray));
-   
+    position: sticky;
     top: 0;
     z-index: 1;
-    font-size: 2rem;
+    background-color: rgba(var(--gray), 0.459);
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
 #close {
-    background-color: rgb(var(--gray));
+    background-color: rgba(var(--gray), 0.459);
     cursor: pointer;
-    border: none;
 }
 
 header {
@@ -41,6 +40,7 @@ header {
     padding: 1rem;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #logo {
@@ -109,16 +109,18 @@ header {
     display: block;
     /* transform: translateX(-1rem);
     transition: transform 0.3s ease-in-out; */
-    animation: closeMenu 0.3s ease-in-out; 
+    animation: closeMenu 0.3s ease-in-out;
 }
 
 @keyframes closeMenu {
     0% {
         display: block;
     }
+
     1% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-1rem);
     }
@@ -186,6 +188,7 @@ body {
     left: 10%;
     background-color: rgba(var(--gray), 0.314);
     border-radius: var(--radius);
+    font-size: smaller;
 }
 
 #events-banner {
@@ -382,7 +385,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .board {
@@ -446,7 +448,8 @@ body {
 
 .gridView {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+    text-align: center;
 }
 
 .listView {
@@ -456,7 +459,17 @@ body {
 }
 
 .listView .member-card {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: start;
+}
+
+.listView .member-card * {
+    padding: 0.25em;
+}
+
+.listView .member-card a {
+    display: block;
+    width: 90%;
 }
 
 .listView img {
@@ -478,6 +491,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
 #footer-nav {

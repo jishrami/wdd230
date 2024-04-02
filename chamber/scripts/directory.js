@@ -52,9 +52,9 @@ function displayDirectory(members) {
         const card = `
         <div class="member-card">
             <h2>${member.name}</h2>
-            <h3>${member.membership_level} ${membLvlIcon}</h3>
+            <h3>${member.membership_level}${membLvlIcon}</h3>
             <img src="${member.image_url}" alt="${member.name}" class="member-logo">
-            <p>${member.phone}</p>
+            <p id="phone">${member.phone}</p>
             <a href="${member.website}" target="_blank">${member.website}</a>
             <p>${member.other_info}</p>
         </div>

@@ -7,6 +7,10 @@
         display: none;
     }
 
+    #banner {
+        font-size: 2rem;
+    }
+
     #logo {
         margin: 0;
     }
@@ -96,9 +100,37 @@
         box-shadow: 0 0 5px 5px #FC513050;
     }
 
+    .gridView {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .listView .member-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        font-size: 1.1em;
+    }
+
+    .listView .member-card h2 {
+        text-align: left;
+    }
+
+    .listView .member-card #phone {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .listView .member-card a {
+        width: auto;
+    }
     .wf1 {
         flex-direction: row;
         align-items: flex-start;
+    }
+
+    footer {
+        flex-direction: row;
     }
 
     #social-foot {
