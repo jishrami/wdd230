@@ -10,17 +10,20 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-bannerClose.addEventListener('click', () => {
-	banner.style.display = "none";
-})
-
-function closedBanner() {
-	if (day.getDay() === 1 || day.getDay() === 2 || day.getDay() === 3) {
-		banner.style.display = "flex";
-	}
-	else {
+if(bannerClose){
+	bannerClose.addEventListener('click', () => {
 		banner.style.display = "none";
+	})
+	
+	function closedBanner() {
+		if (day.getDay() === 1 || day.getDay() === 2 || day.getDay() === 3) {
+			banner.style.display = "flex";
+		}
+		else {
+			banner.style.display = "none";
+		}
 	}
-}
 
-closedBanner()
+	
+	closedBanner()
+}

@@ -5,7 +5,6 @@ async function getDirectory() {
     const data = await response.json();
     console.log(data);
     displayDirectory(data);
-    spotlightDirectory(data);
 }
 
 function displayDirectory(members) {
